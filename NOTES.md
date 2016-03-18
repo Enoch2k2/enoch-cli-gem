@@ -13,7 +13,7 @@ How to build a CLI Gem
 
 -A cli gem that scrapes battle.net, allows the user to choose which game to get info about. Gets the news for the game they choose and allows them to pick the article and read it.
 
-user types battle.net
+user types battle-net
 
 Show's a list of games.
 
