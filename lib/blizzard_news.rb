@@ -24,7 +24,7 @@ class BlizzardNews
 
   def self.list_articles(articles)
     articles.each_with_index do |article, index|
-      puts "#{index+1}. #{article[:name]} - #{article[:description]}"
+      puts "#{index+1}. #{article.name} - #{article.description}"
     end
   end
 
@@ -33,37 +33,37 @@ class BlizzardNews
     input = gets.strip
     case input
       when "1"
-        puts "paste in your browser: #{articles[0][:url]}"
+        puts "paste in your browser: #{articles[0].url}"
         self.open_url(articles)
       when "2"
-        puts "paste in your browser: #{articles[1][:url]}"
+        puts "paste in your browser: #{articles[1].url}"
         self.open_url(articles)
       when "3"
-        puts "paste in your browser: #{articles[2][:url]}"
+        puts "paste in your browser: #{articles[2].url}"
         self.open_url(articles)
       when "4"
-        puts "paste in your browser: #{articles[3][:url]}"
+        puts "paste in your browser: #{articles[3].url}"
         self.open_url(articles)
       when "5"
-        puts "paste in your browser: #{articles[4][:url]}"
+        puts "paste in your browser: #{articles[4].url}"
         self.open_url(articles)
       when "6"
-        puts "paste in your browser: #{articles[5][:url]}"
+        puts "paste in your browser: #{articles[5].url}"
         self.open_url(articles)
       when "7"
-        puts "paste in your browser: #{articles[6][:url]}"
+        puts "paste in your browser: #{articles[6].url}"
         self.open_url(articles)
       when "8"
-        puts "paste in your browser: #{articles[7][:url]}"
+        puts "paste in your browser: #{articles[7].url}"
         self.open_url(articles)
       when "9"
-        puts "paste in your browser: #{articles[8][:url]}"
+        puts "paste in your browser: #{articles[8].url}"
         self.open_url(articles)
       when "10"
-        puts "paste in your browser: #{articles[9][:url]}"
+        puts "paste in your browser: #{articles[9].url}"
         self.open_url(articles)
       when "11"
-        puts "paste in your browser: #{articles[10][:url]}"
+        puts "paste in your browser: #{articles[10].url}"
         self.open_url(articles)
       when "list"
         BlizzardNews::Cli.list

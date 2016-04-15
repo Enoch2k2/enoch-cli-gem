@@ -9,10 +9,10 @@ class BlizzardNews::Cli
 
   def self.list
     puts "1. World of Warcraft. 2. Diablo III. 3. Starcraft II. Type list for list, exit to exit the program."
-    self.input
+    self.get_input
   end
 
-  def self.input
+  def self.get_input
     input = gets.strip
     case input
       when "1"

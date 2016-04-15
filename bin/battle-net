@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
+require_relative '../config.rb'
 
-require_relative '../lib/blizzard_news.rb'
-require_relative '../lib/cli.rb'
-require_relative '../lib/scraper.rb'
 BlizzardNews::Cli.new.call
